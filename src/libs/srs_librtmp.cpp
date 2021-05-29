@@ -2212,7 +2212,8 @@ void srs_amf0_strict_array_append(srs_amf0_t amf0, srs_amf0_t value)
 
 int64_t srs_utils_time_ms()
 {
-    return srs_update_system_time();
+    // it was an astonishing bug
+    return srs_update_system_time() / 1000;
 }
 
 int64_t srs_utils_send_bytes(srs_rtmp_t rtmp)
