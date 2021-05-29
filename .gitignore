@@ -1,0 +1,5 @@
+*.o
+*.a
+
+research/librtmp/objs/
+objs/include
