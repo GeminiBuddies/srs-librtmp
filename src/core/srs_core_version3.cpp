@@ -2,6 +2,7 @@
  * The MIT License (MIT)
  *
  * Copyright (c) 2013-2020 Winlin
+ * Copyright (c) 2021 BenjaminPMLovegood
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -21,4 +22,4 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <srs_core_version3.hpp>
+#include <core/srs_core_version3.hpp>

@@ -1,5 +1,6 @@
 *.o
 *.a
 
+build/
 research/librtmp/objs/
 objs/include

@@ -2,6 +2,7 @@
  * The MIT License (MIT)
  *
  * Copyright (c) 2013-2020 Winlin
+ * Copyright (c) 2021 BenjaminPMLovegood
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -21,16 +22,16 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <srs_rtmp_stack.hpp>
+#include <protocol/srs_rtmp_stack.hpp>
 
-#include <srs_protocol_amf0.hpp>
-#include <srs_protocol_io.hpp>
-#include <srs_kernel_buffer.hpp>
-#include <srs_core_autofree.hpp>
-#include <srs_kernel_utility.hpp>
-#include <srs_protocol_stream.hpp>
-#include <srs_protocol_utility.hpp>
-#include <srs_rtmp_handshake.hpp>
+#include <protocol/srs_protocol_amf0.hpp>
+#include <protocol/srs_protocol_io.hpp>
+#include <kernel/srs_kernel_buffer.hpp>
+#include <core/srs_core_autofree.hpp>
+#include <kernel/srs_kernel_utility.hpp>
+#include <protocol/srs_protocol_stream.hpp>
+#include <protocol/srs_protocol_utility.hpp>
+#include <protocol/srs_rtmp_handshake.hpp>
 
 // for srs-librtmp, @see https://github.com/ossrs/srs/issues/213
 #ifndef _WIN32

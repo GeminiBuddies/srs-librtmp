@@ -2,6 +2,7 @@
  * The MIT License (MIT)
  *
  * Copyright (c) 2013-2020 Winlin
+ * Copyright (c) 2021 BenjaminPMLovegood
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -21,7 +22,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <srs_kernel_file.hpp>
+#include <kernel/srs_kernel_file.hpp>
 
 // for srs-librtmp, @see https://github.com/ossrs/srs/issues/213
 #ifndef _WIN32
@@ -33,8 +34,8 @@
 #include <sstream>
 using namespace std;
 
-#include <srs_kernel_log.hpp>
-#include <srs_kernel_error.hpp>
+#include <kernel/srs_kernel_log.hpp>
+#include <kernel/srs_kernel_error.hpp>
 
 // For utest to mock it.
 srs_open_t _srs_open_fn = ::open;

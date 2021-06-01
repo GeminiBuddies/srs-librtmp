@@ -2,6 +2,7 @@
  * The MIT License (MIT)
  *
  * Copyright (c) 2013-2020 Winlin
+ * Copyright (c) 2021 BenjaminPMLovegood
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -21,7 +22,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <srs_kernel_utility.hpp>
+#include <kernel/srs_kernel_utility.hpp>
 
 // for srs-librtmp, @see https://github.com/ossrs/srs/issues/213
 #ifndef _WIN32
@@ -40,11 +41,11 @@
 #include <algorithm>
 using namespace std;
 
-#include <srs_core_autofree.hpp>
-#include <srs_kernel_log.hpp>
-#include <srs_kernel_error.hpp>
-#include <srs_kernel_buffer.hpp>
-#include <srs_kernel_flv.hpp>
+#include <core/srs_core_autofree.hpp>
+#include <kernel/srs_kernel_log.hpp>
+#include <kernel/srs_kernel_error.hpp>
+#include <kernel/srs_kernel_buffer.hpp>
+#include <kernel/srs_kernel_flv.hpp>
 
 // this value must:
 // equals to (SRS_SYS_CYCLE_INTERVAL*SRS_SYS_TIME_RESOLUTION_MS_TIMES)*1000

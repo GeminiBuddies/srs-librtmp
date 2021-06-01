@@ -2,6 +2,7 @@
  * The MIT License (MIT)
  *
  * Copyright (c) 2013-2020 Winlin
+ * Copyright (c) 2021 BenjaminPMLovegood
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -21,11 +22,11 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <srs_lib_simple_socket.hpp>
+#include <libs/srs_lib_simple_socket.hpp>
 
 #include <netinet/tcp.h>
 
-#include <srs_kernel_error.hpp>
+#include <kernel/srs_kernel_error.hpp>
 
 // for srs-librtmp, @see https://github.com/ossrs/srs/issues/213
 #ifndef _WIN32
@@ -69,9 +70,9 @@
 #include <stdio.h>
 #include <netdb.h>
 
-#include <srs_core_autofree.hpp>
-#include <srs_kernel_utility.hpp>
-#include <srs_kernel_consts.hpp>
+#include <core/srs_core_autofree.hpp>
+#include <kernel/srs_kernel_utility.hpp>
+#include <kernel/srs_kernel_consts.hpp>
 
 // when io not hijacked, use simple socket, the block sync stream.
 #ifndef SRS_HIJACK_IO

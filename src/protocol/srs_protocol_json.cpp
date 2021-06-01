@@ -2,6 +2,7 @@
  * The MIT License (MIT)
  *
  * Copyright (c) 2013-2020 Winlin
+ * Copyright (c) 2021 BenjaminPMLovegood
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -21,7 +22,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <srs_core.hpp>
+#include <core/srs_core.hpp>
 
 // LCOV_EXCL_START
 /* vim: set et ts=3 sw=3 sts=3 ft=c:
@@ -1340,14 +1341,14 @@ void json_value_free (json_value * value)
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <srs_protocol_json.hpp>
+#include <protocol/srs_protocol_json.hpp>
 
 #include <sstream>
 using namespace std;
 
-#include <srs_kernel_log.hpp>
-#include <srs_protocol_amf0.hpp>
-#include <srs_kernel_utility.hpp>
+#include <kernel/srs_kernel_log.hpp>
+#include <protocol/srs_protocol_amf0.hpp>
+#include <kernel/srs_kernel_utility.hpp>
 
 /* json encode
  cout<< SRS_JOBJECT_START

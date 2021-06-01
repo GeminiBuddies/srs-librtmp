@@ -2,6 +2,7 @@
  * The MIT License (MIT)
  *
  * Copyright (c) 2013-2020 Winlin
+ * Copyright (c) 2021 BenjaminPMLovegood
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -36,21 +37,21 @@
 #include <sstream>
 using namespace std;
 
-#include <srs_kernel_error.hpp>
-#include <srs_rtmp_stack.hpp>
-#include <srs_lib_simple_socket.hpp>
-#include <srs_protocol_utility.hpp>
-#include <srs_core_autofree.hpp>
-#include <srs_rtmp_stack.hpp>
-#include <srs_kernel_utility.hpp>
-#include <srs_kernel_buffer.hpp>
-#include <srs_protocol_amf0.hpp>
-#include <srs_kernel_flv.hpp>
-#include <srs_kernel_codec.hpp>
-#include <srs_kernel_file.hpp>
-#include <srs_lib_bandwidth.hpp>
-#include <srs_raw_avc.hpp>
-#include <srs_kernel_mp4.hpp>
+#include <kernel/srs_kernel_error.hpp>
+#include <protocol/srs_rtmp_stack.hpp>
+#include <libs/srs_lib_simple_socket.hpp>
+#include <protocol/srs_protocol_utility.hpp>
+#include <core/srs_core_autofree.hpp>
+#include <protocol/srs_rtmp_stack.hpp>
+#include <kernel/srs_kernel_utility.hpp>
+#include <kernel/srs_kernel_buffer.hpp>
+#include <protocol/srs_protocol_amf0.hpp>
+#include <kernel/srs_kernel_flv.hpp>
+#include <kernel/srs_kernel_codec.hpp>
+#include <kernel/srs_kernel_file.hpp>
+#include <libs/srs_lib_bandwidth.hpp>
+#include <protocol/srs_raw_avc.hpp>
+#include <kernel/srs_kernel_mp4.hpp>
 
 // kernel module.
 ISrsLog* _srs_log = new ISrsLog();

@@ -2,6 +2,7 @@
  * The MIT License (MIT)
  *
  * Copyright (c) 2013-2020 Winlin
+ * Copyright (c) 2021 BenjaminPMLovegood
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -21,18 +22,18 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <srs_rtmp_handshake.hpp>
+#include <protocol/srs_rtmp_handshake.hpp>
 
 #include <time.h>
 
-#include <srs_core_autofree.hpp>
-#include <srs_kernel_error.hpp>
-#include <srs_kernel_log.hpp>
-#include <srs_protocol_io.hpp>
-#include <srs_protocol_utility.hpp>
-#include <srs_rtmp_stack.hpp>
-#include <srs_kernel_buffer.hpp>
-#include <srs_kernel_utility.hpp>
+#include <core/srs_core_autofree.hpp>
+#include <kernel/srs_kernel_error.hpp>
+#include <kernel/srs_kernel_log.hpp>
+#include <protocol/srs_protocol_io.hpp>
+#include <protocol/srs_protocol_utility.hpp>
+#include <protocol/srs_rtmp_stack.hpp>
+#include <kernel/srs_kernel_buffer.hpp>
+#include <kernel/srs_kernel_utility.hpp>
 
 using namespace srs_internal;
 
