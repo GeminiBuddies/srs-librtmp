@@ -2,6 +2,7 @@
  * The MIT License (MIT)
  *
  * Copyright (c) 2013-2018 Winlin
+ * Copyright (c) 2021 BenjaminPMLovegood
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -25,7 +26,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#include "../../objs/include/srs_librtmp.h"
+#include <srs_librtmp.hpp>
 
 int connect_ic(srs_rtmp_t irtmp);
 int connect_oc(srs_rtmp_t ortmp);

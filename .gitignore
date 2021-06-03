@@ -4,3 +4,6 @@
 build/
 research/librtmp/objs/
 objs/include
+
+cmake-build-*/
+.idea/
